@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#EEEEEE"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MovieDetailsActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.github.florent37.shapeofview.shapes.ArcView
+        android:id="@+id/diagonalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:elevation="10dip"
+        app:shape_arc_position="bottom"
+        app:shape_arc_height="-50dp"
+        >
+
+        <com.flaviofaria.kenburnsview.KenBurnsView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_movie_detail_poster_path"
+            android:src="@drawable/arclayout_rogue"
+            />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="320dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="345dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_movie_detail_rating_one"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:tint="@color/gold"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_movie_detail_rating_two"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:tint="@color/gold"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_movie_detail_rating_three"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:tint="@color/gold"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_movie_detail_rating_five"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:tint="@color/gold"/>
+
+                <ImageView
+                    android:id="@+id/iv_movie_detail_rating_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:tint="@color/gold" />
+
+            </LinearLayout>
+
+
+
+    </com.github.florent37.shapeofview.shapes.ArcView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="325dp"
+        android:src="@drawable/arclayout_ic_add"
+        app:backgroundTint="#ce471d"
+        app:elevation="15dp"
+        app:fabSize="normal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/diagonalLayout"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Story"
+            android:id="@+id/tv_movie_detail_title"
+            android:textColor="#3A3A3A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:fontFamily="sans-serif"
+            android:text="about"
+            android:id="@+id/tv_movie_detail_large_text"
+            android:textColor="#979696"
+            android:textSize="15sp"
+            />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+
+</ScrollView>
